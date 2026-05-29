@@ -20,17 +20,34 @@ Built for [NHAI Hackathon 7.0](https://nhai.gov.in) — securing India's 1,400+ 
 
 ---
 
-## 📲 Quick App Installation (Try the App Instantly!)
+## 📲 Standalone App Download & Installation
+
+<div align="center">
+<br/>
+
+### 🚀 NHAI Hackathon 7.0 — Try the App Instantly!
+
+<a href="https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk">
+  <img src="https://img.shields.io/badge/📥__DOWNLOAD__STANDALONE__APK-testnhai.apk-FF6B00?style=for-the-badge&logo=android&logoColor=white&labelColor=111122" alt="Download Standalone APK" height="50" style="border-radius: 8px;" />
+</a>
+
+<br/>
+<br/>
+
+**Direct Link:** [https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)
+
+*Pre-compiled with all offline C++ ML libraries, SQLite tables, and assets.*
+
+</div>
 
 > [!IMPORTANT]
-> You do **not** need to install Android Studio or configure SDK command-line tools to try the prototype! We have compiled a production-ready Android Debug APK that you can install directly on your phone.
+> You **do not** need to clone the repository, install Node.js, configure Android Studio, or download SDK command-line tools to test the prototype. Simply download and install `testnhai.apk` above directly to your Android device or emulator to test the 9 screens and matching flow instantly.
 
-### 📥 How to Install on your Android Phone
-1. **Download the APK**: Open this link directly on your Android phone's browser and tap on **`app-release.apk`** under Assets:
-   👉 **[Download direct APK from GitHub Releases](https://github.com/destimeus-hub/FaceAuthOffline/releases/tag/v1.0.0)**
-2. **Install**: Tap on the downloaded `.apk` file in your browser downloads or File Manager.
-3. **Allow Permissions**: If prompted, allow "Install from Unknown Sources" (standard for non-Play Store files).
-4. **Launch**: Open **FaceAuth Offline** and test the 9 fully interactive offline screens!
+### 📥 How to Install on Your Android Phone:
+1. **Download**: Click the orange **DOWNLOAD STANDALONE APK** button above using your phone's browser.
+2. **Open**: Tap on the downloaded `testnhai.apk` file in your browser's download history or File Manager.
+3. **Install**: Click **Install** when prompted. If Android asks, allow **"Installation from Unknown Sources"** (a standard prompt for apps installed directly outside the Google Play Store).
+4. **Launch**: Open **FaceAuth Offline** and run the local biometrics validation!
 
 ---
 
