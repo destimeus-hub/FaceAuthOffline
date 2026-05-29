@@ -26,7 +26,7 @@ Built for [NHAI Hackathon 7.0](https://nhai.gov.in) — securing India's 1,400+ 
 > You do **not** need to install Android Studio or configure SDK command-line tools to try the prototype! We have compiled a production-ready Android Debug APK that you can install directly on your phone.
 
 ### 📥 How to Install on your Android Phone
-1. **Download the APK**: Open this link directly on your Android phone's browser and tap on `app-debug.apk` under Assets:
+1. **Download the APK**: Open this link directly on your Android phone's browser and tap on **`app-release.apk`** under Assets:
    👉 **[Download direct APK from GitHub Releases](https://github.com/destimeus-hub/FaceAuthOffline/releases/tag/v1.0.0)**
 2. **Install**: Tap on the downloaded `.apk` file in your browser downloads or File Manager.
 3. **Allow Permissions**: If prompted, allow "Install from Unknown Sources" (standard for non-Play Store files).
