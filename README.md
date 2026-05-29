@@ -285,19 +285,6 @@ Measured on Snapdragon 680, 4GB RAM, Android 13.
 
 ---
 
-## 👥 Team
-
-Built with 🧡 for **NHAI Hackathon 7.0**
-
-| Role | Responsibility |
-|------|---------------|
-| **ML Engineer** | Face detection & embedding pipeline, model optimization |
-| **Mobile Developer** | React Native screens, camera integration, navigation |
-| **Backend Engineer** | SQLite schema, sync engine, encryption layer |
-| **UI/UX Designer** | NHAI-branded interface, user flow design |
-
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License**.
