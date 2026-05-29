@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm install --ignore-scripts --legacy-peer-deps
 
       - name: Run TypeScript compiler check
         run: npx tsc --noEmit
@@ -46,7 +46,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm install --ignore-scripts --legacy-peer-deps
 
       - name: Setup Java 17
         uses: actions/setup-java@v4
