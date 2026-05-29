@@ -36,16 +36,6 @@ export function useCamera(): UseCameraReturn {
 
   const frameCounterRef = useRef<number>(0);
 
-  useEffect(() => {
-    if (MOCK_MODE) {
-      setHasPermission(true);
-      setIsReady(true);
-      return;
-    }
-
-    checkPermission();
-  }, [checkPermission]);
-
   const checkPermission = useCallback(async () => {
     try {
       if (MOCK_MODE) {
@@ -60,6 +50,16 @@ export function useCamera(): UseCameraReturn {
       setHasPermission(false);
     }
   }, []);
+
+  useEffect(() => {
+    if (MOCK_MODE) {
+      setHasPermission(true);
+      setIsReady(true);
+      return;
+    }
+
+    checkPermission();
+  }, [checkPermission]);
 
   const requestPermission = useCallback(async (): Promise<boolean> => {
     try {

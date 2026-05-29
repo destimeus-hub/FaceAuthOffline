@@ -20,7 +20,7 @@ const FaceBoundingBox: React.FC<FaceBoundingBoxProps> = ({
   color = '#00E676',
   label = 'Face Detected',
   confidence,
-  _animated = true,
+  animated: _animated = true,
 }) => {
   const cornerLength = 20;
   const cornerWidth = 3;
