@@ -20,37 +20,6 @@ Built for [NHAI Hackathon 7.0](https://nhai.gov.in) — securing India's 1,400+ 
 
 ---
 
-## 📲 Standalone App Download & Installation
-
-<div align="center">
-<br/>
-
-### 🚀 NHAI Hackathon 7.0 — Try the App Instantly!
-
-<a href="https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk">
-  <img src="https://img.shields.io/badge/📥__DOWNLOAD__STANDALONE__APK-testnhai.apk-FF6B00?style=for-the-badge&logo=android&logoColor=white&labelColor=111122" alt="Download Standalone APK" height="50" style="border-radius: 8px;" />
-</a>
-
-<br/>
-<br/>
-
-**Direct Link:** [https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)
-
-*Pre-compiled with all offline C++ ML libraries, SQLite tables, and assets.*
-
-</div>
-
-> [!IMPORTANT]
-> You **do not** need to clone the repository, install Node.js, configure Android Studio, or download SDK command-line tools to test the prototype. Simply download and install `testnhai.apk` above directly to your Android device or emulator to test the 9 screens and matching flow instantly.
-
-### 📥 How to Install on Your Android Phone:
-1. **Download**: Click the orange **DOWNLOAD STANDALONE APK** button above using your phone's browser.
-2. **Open**: Tap on the downloaded `testnhai.apk` file in your browser's download history or File Manager.
-3. **Install**: Click **Install** when prompted. If Android asks, allow **"Installation from Unknown Sources"** (a standard prompt for apps installed directly outside the Google Play Store).
-4. **Launch**: Open **FaceAuth Offline** and run the local biometrics validation!
-
----
-
 ## 🎯 The Problem
 
 NHAI operates 1,400+ toll plazas across India's national highway network. **35% of these locations have unreliable or no cellular connectivity.** Current identity verification relies on physical ID cards — easily forged, shared, or lost. Cloud-dependent biometric systems fail during outages, creating security gaps.
@@ -91,6 +60,7 @@ FaceAuthOffline/
 │   │   └── SyncService.ts            # Offline queue & push
 │   ├── utils/
 │   │   ├── imageProcessing.ts        # Face alignment & transforms
+ guide.
 │   │   ├── mathUtils.ts              # Cosine similarity & EAR
 │   │   └── constants.ts              # App-wide constants
 │   └── navigation/
@@ -278,6 +248,37 @@ Measured on Snapdragon 680, 4GB RAM, Android 13.
 | [Architecture Diagram](docs/architecture-diagram.svg) | Visual system architecture (SVG) |
 | [Demo Script](docs/demo-script.md) | 5-minute demo walkthrough with talking points |
 | [Model Documentation](models/README.md) | ML model details, metrics, and licensing |
+
+---
+
+## 📲 Standalone App Download & Installation
+
+<div align="center">
+<br/>
+
+### 🚀 NHAI Hackathon 7.0 — Try the App Instantly!
+
+<a href="https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk">
+  <img src="https://img.shields.io/badge/📥__DOWNLOAD__STANDALONE__APK-testnhai.apk-FF6B00?style=for-the-badge&logo=android&logoColor=white&labelColor=111122" alt="Download Standalone APK" height="50" style="border-radius: 8px;" />
+</a>
+
+<br/>
+<br/>
+
+**Direct Link:** [https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)
+
+*Pre-compiled with all offline C++ ML libraries, SQLite tables, and assets.*
+
+</div>
+
+> [!IMPORTANT]
+> You **do not** need to clone the repository, install Node.js, configure Android Studio, or download SDK command-line tools to test the prototype. Simply download and install `testnhai.apk` above directly to your Android device or emulator to test the 9 screens and matching flow instantly.
+
+### 📥 How to Install on Your Android Phone:
+1. **Download**: Click the orange **DOWNLOAD STANDALONE APK** button above using your phone's browser.
+2. **Open**: Tap on the downloaded `testnhai.apk` file in your browser's download history or File Manager.
+3. **Install**: Click **Install** when prompted. If Android asks, allow **"Installation from Unknown Sources"** (a standard prompt for apps installed directly outside the Google Play Store).
+4. **Launch**: Open **FaceAuth Offline** and run the local biometrics validation!
 
 ---
 
