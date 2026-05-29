@@ -171,7 +171,7 @@ cd android
 
 *The compiled output is located at: `android/app/build/outputs/apk/release/testnhai.apk`*
 
-👉 **[Download the pre-compiled testnhai.apk directly instead](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)** (No compilation required)
+👉 **[Download the pre-compiled testnhai.apk directly instead](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)** *(⚠️ Open this link on your Android phone/tablet to download and install directly!)*
 
 ---
 
@@ -273,6 +273,9 @@ Measured on Snapdragon 680, 4GB RAM, Android 13.
 
 > [!IMPORTANT]
 > You **do not** need to clone the repository, install Node.js, configure Android Studio, or download SDK command-line tools to test the prototype. Simply download and install `testnhai.apk` above directly to your Android device or emulator to test the 9 screens and matching flow instantly.
+
+> [!WARNING]
+> **Open this on your Android Phone:** Please open this download link directly on your Android phone's web browser. Downloading the APK file on a PC will not install it.
 
 ### 📥 How to Install on Your Android Phone:
 1. **Download**: Click the orange **DOWNLOAD STANDALONE APK** button above using your phone's browser.
