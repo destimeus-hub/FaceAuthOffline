@@ -192,14 +192,16 @@ npm run android
 
 ### Building Release APK
 
+For developers wanting to compile the standalone APK from source:
+
 ```bash
 cd android
 ./gradlew assembleRelease
 ```
-> [!NOTE]
-> 📱 **Download App (APK):** [testnhai.apk](file:///C:/Users/Amber/Desktop/nhai/FaceAuthOffline/android/app/build/outputs/apk/release/testnhai.apk) 
 
-*The compiled APK can be found locally at `android/app/build/outputs/apk/release/testnhai.apk`*
+*The compiled output is located at: `android/app/build/outputs/apk/release/testnhai.apk`*
+
+👉 **[Download the pre-compiled testnhai.apk directly instead](https://github.com/destimeus-hub/FaceAuthOffline/releases/download/v1.0.0/testnhai.apk)** (No compilation required)
 
 ---
 
