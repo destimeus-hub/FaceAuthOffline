@@ -227,15 +227,19 @@ The system is organized into 5 layers — App, Detection Pipeline, Liveness Pipe
 
 ## 📸 Screenshots
 
-| Splash | Enrollment | Verification |
-|--------|-----------|--------------|
-| *Coming soon* | *Coming soon* | *Coming soon* |
+| Splash | Onboarding | Dashboard |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/01_splash.jpg" width="220" alt="Splash Screen" /> | <img src="docs/screenshots/02_onboarding.jpg" width="220" alt="Onboarding Screen" /> | <img src="docs/screenshots/03_dashboard.jpg" width="220" alt="Dashboard Screen" /> |
 
-| Auth Log | Settings | Benchmark |
-|----------|----------|-----------|
-| *Coming soon* | *Coming soon* | *Coming soon* |
+| Enrollment | Verification | Auth Result |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/04_enrollment.jpg" width="220" alt="Enrollment Screen" /> | <img src="docs/screenshots/05_verification.jpg" width="220" alt="Verification Screen" /> | <img src="docs/screenshots/06_verification_result.jpg" width="220" alt="Verification Result" /> |
 
-> Screenshots will be added to [`docs/screenshots/`](docs/screenshots/) after UI implementation.
+| Auth Log | Settings | Benchmarks |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/07_auth_log.jpg" width="220" alt="Auth Log Screen" /> | <img src="docs/screenshots/08_settings.jpg" width="220" alt="Settings Screen" /> | <img src="docs/screenshots/09_benchmarks.jpg" width="220" alt="Benchmarks Screen" /> |
+
+*Offline verification pipeline and user registration interfaces built custom for NHAI Hackathon 7.0.*
 
 ---
 
