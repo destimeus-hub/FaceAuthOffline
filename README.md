@@ -195,8 +195,11 @@ npm run android
 ```bash
 cd android
 ./gradlew assembleRelease
-# Output: android/app/build/outputs/apk/release/testnhai.apk
 ```
+> [!NOTE]
+> 📱 **Download App (APK):** [testnhai.apk](file:///C:/Users/Amber/Desktop/nhai/FaceAuthOffline/android/app/build/outputs/apk/release/testnhai.apk) 
+
+*The compiled APK can be found locally at `android/app/build/outputs/apk/release/testnhai.apk`*
 
 ---
 
