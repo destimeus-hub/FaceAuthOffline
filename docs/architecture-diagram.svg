@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Glow filter for orange elements -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Subtle shadow for cards -->
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#FF6B00" flood-opacity="0.15"/>
+    </filter>
+    <!-- Arrow marker -->
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FF6B00"/>
+    </marker>
+    <!-- Gradient for header bar -->
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF8C33" stop-opacity="0.7"/>
+    </linearGradient>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0F"/>
+      <stop offset="100%" stop-color="#0D0D15"/>
+    </linearGradient>
+    <!-- Layer label background -->
+    <linearGradient id="layerLabel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#FF6B00" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+
+  <!-- Grid pattern overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1A1A2E" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- HEADER BAR -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="0" y="0" width="1200" height="52" fill="url(#headerGrad)" opacity="0.95"/>
+  <text x="30" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" letter-spacing="2">NHAI</text>
+  <text x="82" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="300" fill="#FFFFFF" letter-spacing="1"> │ FaceAuth Offline — System Architecture</text>
+  <text x="1020" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#FFFFFF" opacity="0.7">Hackathon 7.0 • v1.0.0</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 1: APP LAYER (y: 68–178) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- Layer background -->
+  <rect x="20" y="68" width="1160" height="110" rx="8" fill="#0E0E18" stroke="#1E1E32" stroke-width="1"/>
+  <!-- Layer label -->
+  <rect x="20" y="68" width="130" height="24" rx="4" fill="url(#layerLabel)" stroke="#FF6B00" stroke-width="0.5"/>
+  <text x="36" y="84" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FF6B00" letter-spacing="1.5">APP LAYER</text>
+
+  <!-- Screen boxes -->
+  <rect x="48" y="102" width="160" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="128" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">SplashScreen</text>
+  <text x="128" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">App Entry &amp; Init</text>
+
+  <rect x="228" y="102" width="160" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="308" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">EnrollmentScreen</text>
+  <text x="308" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">Face Registration</text>
+
+  <rect x="408" y="102" width="160" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="488" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">VerificationScreen</text>
+  <text x="488" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">Live Face Match</text>
+
+  <rect x="588" y="102" width="160" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="668" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">AuthLogScreen</text>
+  <text x="668" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">Audit History</text>
+
+  <rect x="768" y="102" width="160" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="848" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">SettingsScreen</text>
+  <text x="848" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">App Configuration</text>
+
+  <rect x="948" y="102" width="170" height="58" rx="6" fill="#12121E" stroke="#FF6B00" stroke-width="1.2" filter="url(#cardShadow)"/>
+  <text x="1033" y="127" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">BenchmarkScreen</text>
+  <text x="1033" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#8888AA">Perf Metrics</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ARROWS: App → Detection -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <line x1="308" y1="160" x2="308" y2="208" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.7"/>
+  <line x1="488" y1="160" x2="488" y2="208" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.7"/>
+  <line x1="668" y1="160" x2="668" y2="208" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.5" stroke-dasharray="4,3"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 2: DETECTION PIPELINE (y: 210–330) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="210" width="1160" height="120" rx="8" fill="#0E0E18" stroke="#1E1E32" stroke-width="1"/>
+  <rect x="20" y="210" width="180" height="24" rx="4" fill="url(#layerLabel)" stroke="#FF6B00" stroke-width="0.5"/>
+  <text x="36" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FF6B00" letter-spacing="1.5">DETECTION PIPELINE</text>
+
+  <!-- Detection boxes -->
+  <rect x="60" y="248" width="220" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="60" y="248" width="220" height="4" rx="2" fill="#FF6B00"/>
+  <text x="170" y="275" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Face Detection</text>
+  <text x="170" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">MTCNN • 0.5MB • ~45ms</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="280" x2="320" y2="280" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="330" y="248" width="200" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="330" y="248" width="200" height="4" rx="2" fill="#FF6B00"/>
+  <text x="430" y="275" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Face Alignment</text>
+  <text x="430" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">5-Point Landmark • ~8ms</text>
+
+  <!-- Arrow -->
+  <line x1="530" y1="280" x2="570" y2="280" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="580" y="248" width="240" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="580" y="248" width="240" height="4" rx="2" fill="#FF6B00"/>
+  <text x="700" y="275" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Face Embedding</text>
+  <text x="700" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">MobileFaceNet v2 • 1.2MB • ~120ms</text>
+
+  <!-- Arrow -->
+  <line x1="820" y1="280" x2="860" y2="280" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="870" y="248" width="240" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="870" y="248" width="240" height="4" rx="2" fill="#FF6B00"/>
+  <text x="990" y="275" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Feature Matching</text>
+  <text x="990" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Cosine Similarity • Threshold 0.65</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ARROWS: Detection → Liveness (parallel) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <line x1="170" y1="312" x2="170" y2="358" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.6"/>
+  <line x1="700" y1="312" x2="700" y2="358" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 3: LIVENESS PIPELINE (y: 360–480) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="360" width="1160" height="120" rx="8" fill="#0E0E18" stroke="#1E1E32" stroke-width="1"/>
+  <rect x="20" y="360" width="178" height="24" rx="4" fill="url(#layerLabel)" stroke="#FF6B00" stroke-width="0.5"/>
+  <text x="36" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FF6B00" letter-spacing="1.5">LIVENESS PIPELINE</text>
+
+  <rect x="60" y="398" width="220" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="60" y="398" width="220" height="4" rx="2" fill="#22CC66"/>
+  <text x="170" y="425" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Blink Detection</text>
+  <text x="170" y="445" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">EAR Ratio • Threshold 0.21</text>
+
+  <line x1="280" y1="430" x2="320" y2="430" stroke="#22CC66" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="330" y="398" width="220" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="330" y="398" width="220" height="4" rx="2" fill="#22CC66"/>
+  <text x="440" y="425" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Head Turn Tracking</text>
+  <text x="440" y="445" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Euler Angles • ±15° Range</text>
+
+  <line x1="550" y1="430" x2="590" y2="430" stroke="#22CC66" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="600" y="398" width="220" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="600" y="398" width="220" height="4" rx="2" fill="#22CC66"/>
+  <text x="710" y="425" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Anti-Spoof CNN</text>
+  <text x="710" y="445" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">ONNX • 2.1MB • ~85ms</text>
+
+  <line x1="820" y1="430" x2="860" y2="430" stroke="#22CC66" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="870" y="398" width="240" height="64" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="870" y="398" width="240" height="4" rx="2" fill="#22CC66"/>
+  <text x="990" y="425" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Score Fusion</text>
+  <text x="990" y="445" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Weighted Avg • Pass/Fail Gate</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ARROWS: Liveness → Storage -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <line x1="440" y1="462" x2="440" y2="508" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.6"/>
+  <line x1="990" y1="462" x2="990" y2="508" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 4: STORAGE LAYER (y: 510–620) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="510" width="1160" height="110" rx="8" fill="#0E0E18" stroke="#1E1E32" stroke-width="1"/>
+  <rect x="20" y="510" width="152" height="24" rx="4" fill="url(#layerLabel)" stroke="#FF6B00" stroke-width="0.5"/>
+  <text x="36" y="526" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FF6B00" letter-spacing="1.5">STORAGE LAYER</text>
+
+  <!-- SQLite -->
+  <rect x="100" y="545" width="380" height="60" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="100" y="545" width="6" height="60" rx="3" fill="#3399FF"/>
+  <text x="120" y="570" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">SQLite</text>
+  <text x="190" y="570" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8888AA">Relational Storage</text>
+  <text x="120" y="592" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Auth Events • Users • Embeddings • Sync Queue</text>
+
+  <!-- MMKV -->
+  <rect x="700" y="545" width="380" height="60" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="700" y="545" width="6" height="60" rx="3" fill="#AA44FF"/>
+  <text x="720" y="570" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">MMKV</text>
+  <text x="778" y="570" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#8888AA">Key-Value Store</text>
+  <text x="720" y="592" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Settings • Cache • Threshold Config • Feature Flags</text>
+
+  <!-- Connecting line between SQLite and MMKV -->
+  <line x1="480" y1="575" x2="700" y2="575" stroke="#2A2A44" stroke-width="1" stroke-dasharray="6,4"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ARROWS: Storage → Sync -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <line x1="290" y1="605" x2="290" y2="648" stroke="#FF6B00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.6"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- LAYER 5: SYNC LAYER (y: 650–760) -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="650" width="1160" height="110" rx="8" fill="#0E0E18" stroke="#1E1E32" stroke-width="1"/>
+  <rect x="20" y="650" width="138" height="24" rx="4" fill="url(#layerLabel)" stroke="#FF6B00" stroke-width="0.5"/>
+  <text x="36" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="600" fill="#FF6B00" letter-spacing="1.5">SYNC LAYER</text>
+
+  <rect x="60" y="688" width="230" height="56" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="60" y="740" width="230" height="4" rx="2" fill="#FFAA00"/>
+  <text x="175" y="713" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Offline Queue</text>
+  <text x="175" y="731" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">SQLite WAL • FIFO</text>
+
+  <line x1="290" y1="716" x2="340" y2="716" stroke="#FFAA00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="350" y="688" width="230" height="56" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="350" y="740" width="230" height="4" rx="2" fill="#FFAA00"/>
+  <text x="465" y="713" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Connectivity Check</text>
+  <text x="465" y="731" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">NetInfo • Heartbeat Ping</text>
+
+  <line x1="580" y1="716" x2="630" y2="716" stroke="#FFAA00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="640" y="688" width="230" height="56" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="640" y="740" width="230" height="4" rx="2" fill="#FFAA00"/>
+  <text x="755" y="713" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Push to Server</text>
+  <text x="755" y="731" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">REST API • Batch Upload</text>
+
+  <line x1="870" y1="716" x2="920" y2="716" stroke="#FFAA00" stroke-width="1.5" marker-end="url(#arrowOrange)" opacity="0.8"/>
+
+  <rect x="930" y="688" width="230" height="56" rx="6" fill="#12121E" stroke="#2A2A44" stroke-width="1"/>
+  <rect x="930" y="740" width="230" height="4" rx="2" fill="#FFAA00"/>
+  <text x="1045" y="713" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Purge Synced</text>
+  <text x="1045" y="731" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#8888AA">Cleanup • Retention Policy</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <text x="600" y="790" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="9" fill="#555566">© 2026 NHAI — National Highways Authority of India • FaceAuth Offline v1.0.0 • Hackathon 7.0</text>
+</svg>
