@@ -195,7 +195,7 @@ npm run android
 ```bash
 cd android
 ./gradlew assembleRelease
-# Output: android/app/build/outputs/apk/release/app-release.apk
+# Output: android/app/build/outputs/apk/release/testnhai.apk
 ```
 
 ---
